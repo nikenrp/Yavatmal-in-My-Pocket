@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView_edit_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/adView_edit_post">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/post_outline_btn"
+                android:id="@+id/editTitleField"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp"
+                android:hint="Enter text..."
+                android:inputType="textMultiLine"
+                android:ems="10"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_btn"
+                    android:id="@+id/editImageSelect"
+                    android:background="#00ffffff"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_delete"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_post_remove_image"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:text="Submit Post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/editSubmitButton"
+                android:textColor="#ffffff"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/rounded_btn"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

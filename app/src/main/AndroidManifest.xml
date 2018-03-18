@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="in.protechlabz.www.yavatmalindicatorserver"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="in.protechlabz.www.nearbyplaces.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION"/>
+
+    <uses-feature
+        android:glEsVersion="0x0020000"
+        android:required="true"/>
+
+    <application
+        android:name=".utils.YavatmalInMyPocket"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- [START fcm_default_icon] -->
+        <!--
+             Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_notification"/>
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent"/>
+        <!-- [END fcm_default_icon] -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyChSLh_uZYL87wFeoNqo7OtupWzFMqYXB0"/>
+
+        <activity
+            android:name=".login.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ui.NearbyActivity"
+            android:label="Nearby Places">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.NearbyActivity"/>
+        </activity>
+        <activity
+            android:name=".nearby.NearbyMainActivity"
+            android:label="Nearby Places">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".nearby.NearbyMainActivity"/>
+        </activity>
+        <activity
+            android:name=".utils.SettingsActivity"
+            android:label="@string/action_settings"/>
+        <activity
+            android:name=".ui.MapActivity"
+            android:label="Location">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MapActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.YtlActivity"
+            android:label="About Yavatmal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.YtlActivity"/>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="Login">
+        </activity>
+        <activity
+            android:name=".login.CreateAccountActivity"
+            android:label="Create New Account">
+        </activity>
+        <activity
+            android:name=".ui.DirectoryListActivity"
+            android:label="Directory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.DirectoryListActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.EmergencyListActivity"
+            android:label="Emergency Contacts">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.EmergencyListActivity"/>
+        </activity>
+
+        <service android:name=".firebase.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".login.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.BusListActivity"
+            android:label="Bus Timings"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.BusListActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.BusActivity"
+            android:label="Bus Timings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.BusActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.DetailWeatherActivity"
+            android:label="Weather Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.DetailWeatherActivity"/>
+        </activity>
+        <activity
+            android:name=".NewsList"
+            android:label="Today&apos;s Headlines">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewsList"/>
+        </activity>
+        <activity
+            android:name=".NewsDetails"
+            android:label="News Details">
+        </activity>
+        <activity
+            android:name=".tour.TourPenchActivity"
+            android:label="Pench Tiger Reserve">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tour.TourPenchActivity"/>
+        </activity>
+        <activity
+            android:name=".tour.TourSahasrakundActivity"
+            android:label="Sahastrakund Waterfall">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tour.TourSahasrakundActivity"/>
+        </activity>
+        <activity
+            android:name=".tour.TourTadobaActivity"
+            android:label="Tadoba Tiger Reserve">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tour.TourTadobaActivity"/>
+        </activity>
+        <activity
+            android:name=".tour.TourTipeshwarActivity"
+            android:label="Tipeshwar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tour.TourTipeshwarActivity"/>
+        </activity>
+        <activity
+            android:name=".tour.TourBorActivity"
+            android:label="Bor Wildlife Sanctuary">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tour.TourBorActivity"/>
+        </activity>
+        <activity
+            android:name=".tour.TourChikhaldaraActivity"
+            android:label="Chikhaldara">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tour.TourChikhaldaraActivity"/>
+        </activity>
+        <activity
+            android:name=".tour.TourMahurActivity"
+            android:label="Mahur">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tour.TourMahurActivity"/>
+        </activity>
+        <activity
+            android:name=".tour.TourMelghatActivity"
+            android:label="Melghat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tour.TourMelghatActivity"/>
+        </activity>
+        <activity
+            android:name=".tour.TourPaingangaActivity"
+            android:label="Painganga Wildlife Sanctuary">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tour.TourPaingangaActivity"/>
+        </activity>
+        <activity
+            android:name=".tour.TourListActivity"
+            android:label="Tour Spots">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tour.TourListActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.TermsCondition"
+            android:label="Terms &amp; Conditions">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.TermsCondition"/>
+        </activity>
+        <activity
+            android:name=".ui.ContactUsActivity"
+            android:label="Contact Us">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ContactUsActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.ContactListActivity"
+            android:label="Contact List"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ContactListActivity"/>
+        </activity>
+        <activity android:name=".blog.BlogMainActivity"/>
+        <activity
+            android:name=".blog.PostActivity"
+            android:label="Post"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".blog.PostActivity"/>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+        <activity
+            android:name=".blog.SetupActivity"
+            android:label="Profile"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".blog.SetupActivity"/>
+        </activity>
+
+        <!-- Activity required to show ad overlays -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity
+            android:name=".blog.LikesListActivity"
+            android:label="Likes">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".blog.LikesListActivity"/>
+        </activity>
+        <activity
+            android:name=".blog.CommentsListActivity"
+            android:label="Comments"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".blog.CommentsListActivity"/>
+        </activity>
+        <activity
+            android:name=".blog.EditPostActivity"
+            android:label="Edit Post"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".blog.EditPostActivity"/>
+        </activity>
+        <activity android:name=".ui.DemoWebViewActivity">
+        </activity>
+    </application>
+
+</manifest>

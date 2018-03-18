@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "81769528004",
+    "firebase_url": "https://yavatmalindicatorserver.firebaseio.com",
+    "project_id": "yavatmalindicatorserver",
+    "storage_bucket": "yavatmalindicatorserver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81769528004:android:317a84179783b335",
+        "android_client_info": {
+          "package_name": "in.protechlabz.www.yavatmalindicatorserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81769528004-8ars3mnei2084n8hf616pagr9e85uipn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.protechlabz.www.yavatmalindicatorserver",
+            "certificate_hash": "CC90C09DD1ACBFB7DCA912D10DE4A4E0DF511047"
+          }
+        },
+        {
+          "client_id": "81769528004-fkbv1995k6fie6948qu0uu2up444u0v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPi7QgtojJ86C9NszLOzhCCN_-vzgJhCs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81769528004-fkbv1995k6fie6948qu0uu2up444u0v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">माझ्या खिशात यवतमाळ</string>
+    <string name="action_settings">सेटिंग्ज</string>
+
+    <!-- Base Error Strings-->
+    <string name="log_error_updating_data">Error updating data: </string>
+    <string name="log_error_the_read_failed">The read failed: </string>
+    <string name="log_error_occurred">"Error occurred: "</string>
+
+    <!--Menu Buttons-->
+    <string name="action_tc">नियम आणि अटी</string>
+    <string name="action_share_button">शेयर</string>
+    <string name="action_business">आपला व्यवसाय नोदवा</string>
+    <string name="action_contact_us">आमच्याशी संपर्क साधा</string>
+    <!--
+
+    == Login and Create Account Strings ==
+
+     -->
+    <!-- Activity Titles  -->
+    <string name="title_activity_create_account">अकौंट बनवा</string>
+
+    <!-- Login and Create Account Screen  -->
+    <string name="text_dont_have_account">खाते नाही?</string>
+    <string name="text_already_have_account">आधीपासूनच एक खाते आहे?</string>
+    <string name="button_create_account">सदस्य बना</string>
+    <string name="button_sign_in">साइन इन</string>
+    <string name="button_signin_with_google">Google सह साइन इन</string>
+    <string name="button_signin_with_password">साइन इन </string>
+    <string name="button_signin_without_password">न करता पुढे साइन इन करा</string>
+    <string name="hint_enter_email">तुमचा ईमेल टाका</string>
+    <string name="hint_enter_username">आपले नांव लिहा</string>
+    <string name="hint_enter_password">पासवर्ड टाका</string>
+    <string name="image_view_logo_image">लोगो प्रतिमा</string>
+    <string name="button_logout">लोग आउट</string>
+
+    <!-- Instructions and Loading Text -->
+    <string name="progress_dialog_loading">Loading…</string>
+    <string name="progress_dialog_authenticating_with_firebase">Authenticating with Firebase…</string>
+    <string name="progress_dialog_creating_user_with_firebase">Attempting to create account…</string>
+    <string name="progress_dialog_check_inbox">Please check your inbox for your password</string>
+
+    <!-- Errors -->
+    <string name="dialog_title_error">Error</string>
+    <string name="error_message_failed_sign_in_no_network">There was a problem with the network connection.\nAre you sure you\'re connected to the internet?</string>
+    <string name="log_error_invalid_provider">"Invalid provider: "</string>
+    <string name="log_error_failed_to_change_password">"Failed to change the password: "</string>
+    <string name="error_invalid_email_not_valid">%s is not a valid email</string>
+    <string name="error_message_email_issue">There was an error with your email; please check that you entered it correctly.</string>
+    <string name="error_you_didnt_give_permissions">You must give ShoppingList++ permission to access your Google account information if you want to use Google sign-in.</string>
+    <string name="error_email_taken">The email is already taken.</string>
+    <string name="error_invalid_password_not_valid">Please enter a password that is at least 6 characters long.</string>
+    <string name="error_cannot_be_empty">This cannot be empty.</string>
+
+    <!-- Google Errors -->
+    <string name="google_error_recoverable_oauth_error">"Recoverable Google OAuth error: "</string>
+    <string name="google_error_google_play_services_not_available">Google Play Services are not available.</string>
+    <string name="google_error_trying_to_connect_google_api">Trying to connect to Google API</string>
+    <string name="google_error_auth_with_google">"Error authenticating with Google: "</string>
+    <string name="google_error_network_error">"Network error: "</string>
+    <string name="google_error_cant_connect_to_api">Are you sure that you set up a project for your app?
+        Check out : https://console.developers.google.com/project. Also make sure you have all the proper
+    gradle dependencies</string>
+
+    <!-- Label for the temperature units preference [CHAR LIMIT=30] -->
+    <string name="pref_language_label">Select Language</string>
+
+    <!-- Label for metric option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_language_label_english">English</string>
+
+    <!-- Label for imperial option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_language_label_hindi">Hindi</string>
+
+    <!-- OAuth Format -->
+    <string name="oauth2_format">oauth2:%s</string>
+
+    <!-- Log Messages -->
+    <string name="log_message_password_changed_successfully">Password changed successfully from temporary password to </string>
+    <string name="log_message_auth_successful">auth successful.</string>
+
+    <!--Main Activity-->
+    <string name="text_current_temperature">वर्तमान तापमान</string>
+    <string name="text_current_temp_not_available">उपलब्ध नाही</string>
+    <string name="text_directory">डिरेक्टरी</string>
+    <string name="text_emergency">आपातकालीन नंबर्स </string>
+    <string name="text_bus_timings">ऐस. टी. वेळापत्रक</string>
+    <string name="text_tour_spots">पर्यटन स्थळे</string>
+    <string name="text_about_ytl">यवतमाळ दर्शन</string>
+    <string name="text_nearby">जवळची ठिकाणे</string>
+    <string name="text_news">आजच्या ठळक बातम्या</string>
+
+    <!--Directory List-->
+    <string name="list_hotels_lodges">हॉटेल्स व लॉज</string>
+    <string name="list_banks">बँक</string>
+    <string name="list_coaching_institutes">प्रशिक्षण संस्था</string>
+    <string name="list_tours_travels">टुर्स आणि ट्रॅव्हल्स</string>
+    <string name="list_function_halls">कार्य सभागृहे</string>
+    <string name="list_hospitals">दवाखाने</string>
+    <string name="list_educational_institutes">शैक्षणिक संस्था</string>
+    <string name="list_medicals">वैद्यकीय</string>
+    <string name="list_govt_offices">शासकीय कार्यालये</string>
+    <string name="list_press">प्रेस</string>
+    <string name="list_railways">रेल्वे</string>
+
+    <!--Emergency List-->
+    <string name="list_police_station">पुलिस चौकशी</string>
+    <string name="list_fire_brigade">अग्निशमन दल </string>
+    <string name="list_ambulance">रुग्णवाहिका</string>
+    <string name="list_blood_bank">रक्तापेढ़ी</string>
+    <string name="list_snake_friend">सर्प मित्र</string>
+
+    <!--Nearby List-->
+    <string name="nearby_hospitals">दवाखाने</string>
+    <string name="nearby_banks">बँक</string>
+    <string name="nearby_atms">एटीएम</string>
+    <string name="nearby_restaurants">रेस्टॉरंट्स</string>
+    <string name="nearby_petrol_pumps">पेट्रोल पम्प</string>
+    <string name="nearby_schools">शाळा</string>
+    <string name="nearby_post_offices">पोस्ट ऑफिस</string>
+    <string name="nearby_police_station">पुलिस चौकशी</string>
+    <string name="nearby_pharmacy">फार्मसी</string>
+    <string name="nearby_airport">विमानतळ</string>
+    <string name="nearby_gym">जिम</string>
+    <string name="nearby_movie_theater">चित्रपट गृहे</string>
+    <string name="nearby_court">न्यायालाये</string>
+    <string name="nearby_bakery">बेकरी</string>
+    <string name="nearby_bar">बार</string>
+    <string name="nearby_cafe">कॅफे</string>
+    <string name="nearby_car_repair">कार दुरुस्ती</string>
+    <string name="nearby_library">ग्रंथालय</string>
+    <string name="nearby_dentist">दंतचिकित्सक</string>
+
+    <!-- Detail Weather Activity-->
+    <string name="detail_weather_desc">वर्णन</string>
+    <string name="detail_weather_temp">तापमान</string>
+    <string name="detail_weather_humidity">आर्द्रता</string>
+    <string name="detail_weather_wind_speed">वार्याची गति</string>
+    <string name="detail_weather_desc_text">उपलब्ध नाही</string>
+
+    <!-- Yavatmal Data -->
+    <string name="ytl_intro">Yavatmal is a city and municipal council of the Yavatmal district in the Indian state of Maharashtra. The name is derived from the Marathi Yavat (mountain) and mal (row). It is the head of a Yavatmal district and a huge marketplace</string>
+    <string name="ytl_history"><b>History\n</b>Formerly known as \"Yeoti\" or \"Yeotmal\", Yavatmal City was the main town of the Berar Sultanate and according to old writings \"the safest place in the world\". The then region of Yavatmal (now Yavatmal district), was part of the dominion of Aladdin Hassan Bahman Shah who founded the Bahmani Sultanate in 1347. In 1572, Murtaza Shah ruler of the Ahmadnagar Sultanate (now another district of Maharashtra state also referred as \"Nagar\"), annexed the Yavatmal district, then in 1596, Chand Bibi, warrior queen of Ahmadnagar, ceded the district of Yavatmal to the Mughal Empire, rulers of a large part of India. Following the death of the sixth Mughal Emperor Aurangzeb in 1707, Yavatmal was passed on to the Maratha Empire. When Raghoji I Bhonsle became ruler of the Nagpur kingdom in 1783, he included the Yavatmal district in his territory. After the British East India Company created Berar Province in 1853, Yavatmal became part of East Berar District in 1863 and later part of the South East Berar district,
+        both districts of the Central Provinces and Berar. Yavatmal remained part of Madhya Pradesh until the 1956 reorganisation of states when it was transferred to the state of Mumbai (Bombay). With the creation of the Maharashtra state on 1 May 1960, Yavatmal district became a part of it.
+        The district has given two chief ministers to the Maharashtra state, Vasantrao Naik and Sudhakarrao Naik along with many other
+        politicians and personalities such as freedom-fighter Loknayak Bapuji Ane and social worker Babaji Datey, Congress Party MLA
+        Mr.Ali Hasan Mamdani and social activist Mrs Hanifa Mamdani. Post-independence, the district of Yavatmal consistently
+        favoured the Congress Party in its political leanings[citation needed] with state government representatives (MLAs) and
+        central government representatives (MPs) elected by the people of Yavatmal coming largely from the Congress Party.
+        In the 1990s, the trend reversed with the election of members of the Bharatiya Janata Party (BJP) to the prominent
+        positions of MP and MLAs to represent Yavatmal both at state and central government levels.the current MP of yavatmal
+        is Bhawna gavel</string>
+    <string name="ytl_demographics"><b>Demographics\n</b>Yavatmal city is administered by a municipal council (category-A).
+        According to census 2011, its population is nearly 138, 464.But this figure is a number of inhabitants within municipal
+        boundaries. Urbanisation has crossed municipal boundaries and neighbouring village\’s viz. Wadgaon road, Lohara,
+        Umarsara, Waghapur, Moha, Lohara, Bhosa, Pimpalgaon, Pangari, Bhoyar, Parwa, Bhari, and Madkona have become part
+        of urban agglomeration having population nearing 3.57 lacs</string>
+    <string name="ytl_economy"><b>Economy\n</b>Yavatmal town is also known as \"Cotton City\" and during British rule
+        was classified as a hill station. Both cotton ginning and pressing are carried on in Yavatmal while the town is also the
+        chief trading centre in the district, and connected by road with Dhamangaon station, 29 miles (47 km) away. Major business
+        establishments in Yavatmal include the Raymonds factory which produces special fibre for jeans. There is a brand new
+        106-acre (0.43 km2) textile Special Economic Zone (SEZ) under construction while HLL Unilever has also decided to
+        restart the plant they currently have in the city. Yavatmal\'s younger generation is slowly joining the 21st-century
+        workforce and there are a number of computer learning centres and educational institutes. Other local businesses in
+        the town are dominated by the presence of agricultural supply facilities used by the nearby farming community.
+        Banking services are available in the Yavatmal, Ner, Pusad, Digras, Ghatanji and Pandharkawada and Wani areas.\n
+The major industrial centres are at MIDC Lohara, Darwha, Digras, Pusad, Umerkhed, Wani, Umari, Pandharkawada,
+    Ralegaon and Babhulgaon, Ner, and Wani-Maregaon with the main market places in Yavatmal City, Wani, Darwha, Digras,
+    Akola Bazar, Ghatanji, Mohada, Pusad, Umerkhed, Arni and Pandharkawada.
+</string>
+
+    <string name="ytl_transport">
+    <![CDATA[
+    <p><b>Transport</b></p>
+    Yavatmal is well connected by the road to the nearby cities like Nagpur, Wardha, Amravati, Akola etc. Shakuntala rail a
+    narrow gauge rail is available connecting yavatmal to central line broad gauge at Murtijapur. Roads and Railways are the
+    major modes of transport in Yavatmal district. Shakuntala rail is the only rail from here.
+
+    <p><b>1. Roads</b></p>
+    National Highway 7 from Nagpur to Hyderabad passes through the district at Vadki, Karanji, Pandharkawada,
+    Patanbori and Kelapur. State highway from Amravati to Chandrapur passes through Ner, Yavatmal, Jodmoha, Mohada,
+    Umari, Karanji and Wani. Nagpur to Tulzapur state highway route passes through Kalamb, Yavatmal, Arni, Umarkhed etc.
+    <p><b>2. Railways</b></p>
+    Yavatmal is the southern terminus of the 762 mm narrow gauge railway known locally as the Shakuntala Railway.
+    This line is composed of two legs intersecting with the broad gauge Howrah-Nagpur-Mumbai line at Murtijapur —
+    the 76 km northern leg to Achalpur and the 113 km southeastern leg to Yavatmal. As of 2004, this line was still owned by a
+    London-based company which had leased the line to India\'s Central Railway since 1903.[2] Darwha Station lies on this line.
+    Wani is a railway junction. From Wani, railway line goes up to Rajur, Chanakha and Majari-Varoda. These lines are used for
+    transportation of coal.
+In an important development, the state cabinet will approve Wardha-Nanded rail link project. This railway line will connect
+Wardha-Yavatmal in western Vidarbha with Nanded in Marathwada.\n
+
+<p><b>3. Airport</b></p>
+Yavatmal airport is located 9 Kilometres east of the city of Yavatmal and has been taken up by Reliance Airport Developers
+ Ltd for development.
+</p>
+]]></string>
+
+    <string name="ytl_education">
+    <![CDATA[
+    <p><b>Education</b></p>
+    Prominent educational institutes:
+    <p><b>Medical</b></p>
+Shri Vasantrao Naik Government Medical College, run by the government, DM Majethia Ayurvedic College.
+<p><b>Technical</b></p>
+Government Polytechnic, Government Residential Women\'s Polytechnic, Jawaharlal Darda Engineering and Technical Institute (private), Dr Bhausaheb Nandurkar College of Engineering & Technology , Jagdamba College of Engineering, ITI Institute, Late Rupeshkumar Ingole Chitrakala Mahavidyalaya.
+
+Other formal educational institutes: Amolakchand Vidhi Mahavidyalaya, Amolakchand Mahavidyalaya (Science, Arts and Commerce), Babaji Datey Kala ani Vanijya Mahavidyalaya (Arts and Commerce College), Pharmacy College, Colleges for Physical Education (BPEd), Mahatma Jyotiba Fule College of Social Work (B.S.W., M.S.W), Ayurvedic College in Yavatmal.
+<p><b>Schools</b></p>
+Jawaharlal Darda English Medium School and Jr. College, St. Aloysius English Medium School, Podar International School (C.B.S.E), Free Methodist English School, Kendriya Vidyalaya Yavatmal (central govt. CBSE school), Yavatmal Public School, Sanskar English Medium, Dr. Nandurkar Mahavidyalaya, Waghapur, Nathar English Medium High School, Vivekanand Vidyalaya, Rani Laxmibai Vidyalaya, Loknayak Bapuji Ane Vidyalaya, Ane Mahila Maha Vidyalaya,Podar International School(CBSE).
+    ]]>
+    </string>
+
+    <string name="ytl_municipal"><b>Yavatmal Municipal Council \n</b>Yavatmal Municipal Council was constituted in 1869 but was dissolved shortly thereafter.
+        It was again established in 1894 and thus forms the oldest municipal council in the district. Mr Eliot was first
+        Mayor and Lieutenant, W. Hege was Deputy Mayor. Mr Govind Punaji Bari was the first Indian Mayor on Yavatmal Municipal
+        council(02-Jan-1914 to 31-May-1932). Under his period Yavatmal got electricity. Elections were conducted for the place
+        of Mayor on 22-Dec-1934, before that he used to get appointed. The area under its jurisdiction is 70 square km.</string>
+    <string name="ytl_culture">The principal language of Yavatmal district is Marathi. However, since the district
+        has numerous Scheduled and Nomadic Tribes, various other languages are also spoken in the form of Gormati or Banjari,
+        Gondi, Hindi, Sindhi Marwari, Telugu and kolami.\nIn 1973 the Marathi Sahitya Sammelan, (Marathi Literature Conference) took place in Yavatmal city presided over
+    by Gajanan Digambar Madgulkar.\nThe district has various entrenched cultures and has India\'s most ancient tribal communities  – the Gond Raja, Gond
+    Pardhan, Kolam, Aandh and Banjara amongst others.\nVarious Hindu fairs take place in the district including:\nMaroti and Gajanan Maharaj Fair in Ghatanji\nShri Chintamani Fair at Kalamb\nShri Dutt Jayanti Fair at Mahur\nThe Jambhora and Mahashiv Ratri in Wani, Pusan and Mahagaon\nShri Rangnaath Swamy in Wani 6. Amba Devi, Kelapur\nBaba kambalposh fair, Arni\nFakiraji Maharaj Fair, Dhanaj Manikwada\nYavatmal also has the liberal culture in both its urban and rural areas and experiences fairs such as the Ghanti Baba ka Uroos in Digras and Uroos in Aarni.\nFestivals like Diwali, Dasara, Bakari-Eid, Ramzaan Eid, Gudi Padwa and almost all Hindu-Muslim occasions are celebrated. The district is also home to a Buddhist community. NAVARATRI is also the traditional festival in Yavatmal.\n
+
+</string>
+
+    <string name="ytl_census">
+    <![CDATA[
+    <p><b>Census 2011 and Other Facts</b></p>
+
+    <p>&#8226Population : 116551</p>
+    <p>&#8226Males : 58549</p>
+    <p>&#8226Female : 58002</p>
+    <p>&#8226Total No. of  houses : 26173</p>
+    <p>&#8226Literacy : 91.95%</p>
+    <p>&#8226Official Language : Marathi</p>
+    <p>&#8226PIN Code : 445001</p>
+    <p>&#8226Telephone Code : 07232</p>
+    <p>&#8226Vehicle registration : MH 29</p>
+    <br>
+    <p>Source: Wikipedia</p>
+    ]]>
+    </string>
+
+</resources>

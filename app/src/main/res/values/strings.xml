@@ -1,0 +1,701 @@
+<resources>
+    <string name="app_name">Yavatmal In My Pocket</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_dummy_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-9016057534718300/2635108673</string>
+
+    <!-- Base Error Strings-->
+    <string name="log_error_updating_data">Error updating data: </string>
+    <string name="log_error_the_read_failed">The read failed: </string>
+    <string name="log_error_occurred">"Error occurred: "</string>
+
+    <!--Menu Buttons-->
+    <string name="action_tc">Terms &amp; Conditions</string>
+    <string name="action_share_button">Share</string>
+    <string name="action_business">Register Your Business</string>
+    <string name="action_contact_us">Contact Us</string>
+
+    <!--
+
+    == Login and Create Account Strings ==
+
+     -->
+    <!-- Activity Titles  -->
+    <string name="title_activity_create_account">Create Account</string>
+
+    <!-- Login and Create Account Screen  -->
+    <string name="text_dont_have_account">Don\'t have an account?</string>
+    <string name="text_already_have_account">Already have an account?</string>
+    <string name="button_create_account">Sign Up</string>
+    <string name="button_sign_in">Sign In</string>
+    <string name="button_signin_with_google">SIGN IN WITH GOOGLE</string>
+    <string name="button_signin_with_password">SIGN IN</string>
+    <string name="button_signin_without_password">CONTINUE WITHOUT SIGN IN</string>
+    <string name="hint_enter_email">Enter your email</string>
+    <string name="hint_enter_username">Enter your name</string>
+    <string name="hint_enter_password">Enter password</string>
+    <string name="image_view_logo_image">Logo Image</string>
+    <string name="button_logout">Logout</string>
+
+    <!-- Instructions and Loading Text -->
+    <string name="progress_dialog_loading">Loading…</string>
+    <string name="progress_dialog_authenticating_with_firebase">Authenticating with Database…</string>
+    <string name="progress_dialog_creating_user_with_firebase">Attempting to create account…</string>
+    <string name="progress_dialog_check_inbox">Please check your inbox for your password</string>
+
+    <!-- Errors -->
+    <string name="dialog_title_error">Error</string>
+    <string name="error_message_failed_sign_in_no_network">There was a problem with the network connection.\nAre you sure you\'re connected to the internet?</string>
+    <string name="log_error_invalid_provider">"Invalid provider: "</string>
+    <string name="log_error_failed_to_change_password">"Failed to change the password: "</string>
+    <string name="error_invalid_email_not_valid">%s is not a valid email</string>
+    <string name="error_message_email_issue">There was an error with your email; please check that you entered it correctly.</string>
+    <string name="error_you_didnt_give_permissions">You must give ShoppingList++ permission to access your Google account information if you want to use Google sign-in.</string>
+    <string name="error_email_taken">The email is already taken.</string>
+    <string name="error_invalid_password_not_valid">Please enter a password that is at least 6 characters long.</string>
+    <string name="error_cannot_be_empty">This cannot be empty.</string>
+
+    <!-- Google Errors -->
+    <string name="google_error_recoverable_oauth_error">"Recoverable Google OAuth error: "</string>
+    <string name="google_error_google_play_services_not_available">Google Play Services are not available.</string>
+    <string name="google_error_trying_to_connect_google_api">Trying to connect to Google API</string>
+    <string name="google_error_auth_with_google">"Error authenticating with Google: "</string>
+    <string name="google_error_network_error">"Network error: "</string>
+    <string name="google_error_cant_connect_to_api">Are you sure that you set up a project for your app?
+        Check out : https://console.developers.google.com/project. Also make sure you have all the proper
+    gradle dependencies</string>
+
+    <!-- Label for the temperature units preference [CHAR LIMIT=30] -->
+    <string name="pref_language_label">Select Language</string>
+
+    <!-- Label for metric option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_language_label_english">English</string>
+
+    <!-- Label for imperial option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_language_label_marathi" translatable="false">Marathi</string>
+
+    <!-- Key name for temperature unit preference in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_language_key" translatable="false">language</string>
+
+    <!-- Value in SharedPreferences for metric temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_language_english" translatable="false">english</string>
+
+    <!-- Value in SharedPreferences for imperial temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_language_marathi" translatable="false">marathi</string>
+
+    <string name="pref_language_label_hindi">Hindi</string>
+
+    <!-- OAuth Format -->
+    <string name="oauth2_format">oauth2:%s</string>
+
+    <!-- Log Messages -->
+    <string name="log_message_password_changed_successfully">Password changed successfully from temporary password to </string>
+    <string name="log_message_auth_successful">auth successful.</string>
+
+    <!--Main Activity-->
+    <string name="text_current_temperature">Current Temperature</string>
+    <string name="text_current_temp_not_available">Not Available</string>
+    <string name="text_directory">Directory</string>
+    <string name="text_emergency">Emergency</string>
+    <string name="text_bus_timings">Bus Timings</string>
+    <string name="text_tour_spots">Tour Spots</string>
+    <string name="text_about_ytl">About Yavatmal</string>
+    <string name="text_nearby">Near By Places</string>
+    <string name="text_news">Todays Headlines</string>
+
+    <!--Directory List-->
+    <string name="list_hotels_lodges">Hotels and Lodges</string>
+    <string name="list_banks">Banks</string>
+    <string name="list_coaching_institutes">Coaching Institutes</string>
+    <string name="list_tours_travels">Tours and Travels</string>
+    <string name="list_function_halls">Function Halls</string>
+    <string name="list_hospitals">Hospitals</string>
+    <string name="list_educational_institutes">Educational Institutes</string>
+    <string name="list_medicals">Medicals</string>
+    <string name="list_govt_offices">Government Offices</string>
+    <string name="list_press">Press</string>
+    <string name="list_railways">Railways</string>
+
+    <!--Emergency List-->
+    <string name="list_police_station">Police Station</string>
+    <string name="list_fire_brigade">Fire Brigade</string>
+    <string name="list_ambulance">Ambulance</string>
+    <string name="list_blood_bank">Blood Banks</string>
+    <string name="list_snake_friend">Snake Friends</string>
+
+    <!--Nearby List-->
+    <string name="nearby_hospitals">Hospitals</string>
+    <string name="nearby_banks">Banks</string>
+    <string name="nearby_atms">Atm</string>
+    <string name="nearby_restaurants">Restaurants</string>
+    <string name="nearby_petrol_pumps">Petrol Pumps</string>
+    <string name="nearby_schools">Schools</string>
+    <string name="nearby_post_offices">Post Office</string>
+    <string name="nearby_police_station">Police Stations</string>
+    <string name="nearby_pharmacy">Pharmacy</string>
+    <string name="nearby_airport">Airport</string>
+    <string name="nearby_gym">Gym</string>
+    <string name="nearby_movie_theater">Movie Theatres</string>
+    <string name="nearby_court">Court Room</string>
+    <string name="nearby_bakery">Bakery</string>
+    <string name="nearby_bar">Bars</string>
+    <string name="nearby_cafe">Cafe</string>
+    <string name="nearby_car_repair">Car Repair</string>
+    <string name="nearby_library">Library</string>
+    <string name="nearby_dentist">Dentist</string>
+
+    <!--Intro or Welcome screen -->
+    <string name="next" translatable="false">NEXT</string>
+    <string name="skip" translatable="false">SKIP</string>
+    <string name="start" translatable="false">GOT IT</string>
+
+    <string name="slide_1_title" translatable="false">Hello Yavatmalkars!</string>
+    <string name="slide_1_desc" translatable="false">This is your own city app. Find every information related to Yavatmal in this app!</string>
+
+    <string name="slide_2_title" translatable="false">Emergency  Contacts</string>
+    <string name="slide_2_desc" translatable="false">Find the contact details and addresses of all the important institutions here!</string>
+
+    <string name="slide_3_title" translatable="false">Search Nearby</string>
+    <string name="slide_3_desc" translatable="false">Use this to find nearby Restaurants, Hotels, ATMs, Banks etc.!</string>
+
+    <string name="slide_4_title" translatable="false">Change Language</string>
+    <string name="slide_4_desc" translatable="false">Just go to settings and change the language to English or Marathi</string>
+
+    <string name="play_again_desc" translatable="false">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again" translatable="false">Play Again</string>
+
+    <!-- Detail Weather Activity-->
+    <string name="detail_weather_desc">Description</string>
+    <string name="detail_weather_temp">Temperature</string>
+    <string name="detail_weather_humidity">Humidity</string>
+    <string name="detail_weather_wind_speed">Wind Speed</string>
+    <string name="detail_weather_desc_text">Not Available</string>
+
+    <!--Categories for Post-->
+    <string-array name="categories_array" translatable="false">
+        <item>General</item>
+        <item>Event in Yavatmal</item>
+        <item>Buy or Sell</item>
+        <item>Room or Property</item>
+        <item>Places to Visit</item>
+        <item>Entertainment</item>
+        <item>Exam Preparation</item>
+        <item>Job Related</item>
+        <item>Foody Update</item>
+        <item>Experience Story</item>
+        <item>Query</item>
+        <item>Service Demand</item>
+    </string-array>
+
+    <string-array name="navigation_drawer_categories_array" translatable="false">
+        <item>All Posts</item>
+        <item>General</item>
+        <item>Event in Yavatmal</item>
+        <item>Buy or Sell</item>
+        <item>Room or Property</item>
+        <item>Places to Visit</item>
+        <item>Entertainment</item>
+        <item>Exam Preparation</item>
+        <item>Job Related</item>
+        <item>Foody Update</item>
+        <item>Experience Story</item>
+        <item>Query</item>
+        <item>Service Demand</item>
+    </string-array>
+    <string name="navigation_drawer_open" translatable="false">Navigation Drawer Opened </string>
+    <string name="navigation_drawer_close" translatable="false">Navigation Drawer Closed</string>
+
+    <!-- Yavatmal Data -->
+    <string name="ytl_intro">Yavatmal is a city and municipal council of the Yavatmal district in the Indian state of Maharashtra. The name is derived from the Marathi Yavat (mountain) and mal (row). It is the head of a Yavatmal district and a huge marketplace</string>
+    <string name="ytl_history"><b>History\n\n</b>Formerly known as \"Yeoti\" or \"Yeotmal\", Yavatmal City was the main town of the Berar Sultanate and according to old writings \"the safest place in the world\". The then region of Yavatmal (now Yavatmal district), was part of the dominion of Aladdin Hassan Bahman Shah who founded the Bahmani Sultanate in 1347. In 1572, Murtaza Shah ruler of the Ahmadnagar Sultanate (now another district of Maharashtra state also referred as \"Nagar\"), annexed the Yavatmal district, then in 1596, Chand Bibi, warrior queen of Ahmadnagar, ceded the district of Yavatmal to the Mughal Empire, rulers of a large part of India. Following the death of the sixth Mughal Emperor Aurangzeb in 1707, Yavatmal was passed on to the Maratha Empire. When Raghoji I Bhonsle became ruler of the Nagpur kingdom in 1783, he included the Yavatmal district in his territory. After the British East India Company created Berar Province in 1853, Yavatmal became part of East Berar District in 1863 and later part of the South East Berar district,
+        both districts of the Central Provinces and Berar. Yavatmal remained part of Madhya Pradesh until the 1956 reorganisation of states when it was transferred to the state of Mumbai (Bombay). With the creation of the Maharashtra state on 1 May 1960, Yavatmal district became a part of it.
+        The district has given two chief ministers to the Maharashtra state, Vasantrao Naik and Sudhakarrao Naik along with many other
+        politicians and personalities such as freedom-fighter Loknayak Bapuji Ane and social worker Babaji Datey, Congress Party MLA
+        Mr.Ali Hasan Mamdani and social activist Mrs Hanifa Mamdani. Post-independence, the district of Yavatmal consistently
+        favoured the Congress Party in its political leanings[citation needed] with state government representatives (MLAs) and
+        central government representatives (MPs) elected by the people of Yavatmal coming largely from the Congress Party.
+        In the 1990s, the trend reversed with the election of members of the Bharatiya Janata Party (BJP) to the prominent
+        positions of MP and MLAs to represent Yavatmal both at state and central government levels.the current MP of yavatmal
+        is Bhawna gavel</string>
+    <string name="ytl_demographics"><b>Demographics\n\n</b>Yavatmal city is administered by a municipal council (category-A).
+        According to census 2011, its population is nearly 138, 464.But this figure is a number of inhabitants within municipal
+        boundaries. Urbanisation has crossed municipal boundaries and neighbouring village\’s viz. Wadgaon road, Lohara,
+        Umarsara, Waghapur, Moha, Lohara, Bhosa, Pimpalgaon, Pangari, Bhoyar, Parwa, Bhari, and Madkona have become part
+        of urban agglomeration having population nearing 3.57 lacs</string>
+    <string name="ytl_economy"><b>Economy\n\n</b>Yavatmal town is also known as \"Cotton City\" and during British rule
+        was classified as a hill station. Both cotton ginning and pressing are carried on in Yavatmal while the town is also the
+        chief trading centre in the district, and connected by road with Dhamangaon station, 29 miles (47 km) away. Major business
+        establishments in Yavatmal include the Raymonds factory which produces special fibre for jeans. There is a brand new
+        106-acre (0.43 km2) textile Special Economic Zone (SEZ) under construction while HLL Unilever has also decided to
+        restart the plant they currently have in the city. Yavatmal\'s younger generation is slowly joining the 21st-century
+        workforce and there are a number of computer learning centres and educational institutes. Other local businesses in
+        the town are dominated by the presence of agricultural supply facilities used by the nearby farming community.
+        Banking services are available in the Yavatmal, Ner, Pusad, Digras, Ghatanji and Pandharkawada and Wani areas.\n
+The major industrial centres are at MIDC Lohara, Darwha, Digras, Pusad, Umerkhed, Wani, Umari, Pandharkawada,
+    Ralegaon and Babhulgaon, Ner, and Wani-Maregaon with the main market places in Yavatmal City, Wani, Darwha, Digras,
+    Akola Bazar, Ghatanji, Mohada, Pusad, Umerkhed, Arni and Pandharkawada.
+</string>
+
+    <string name="ytl_transport">
+    <![CDATA[
+    <p><b>Transport</b></p>
+    Yavatmal is well connected by the road to the nearby cities like Nagpur, Wardha, Amravati, Akola etc. Shakuntala rail a
+    narrow gauge rail is available connecting yavatmal to central line broad gauge at Murtijapur. Roads and Railways are the
+    major modes of transport in Yavatmal district. Shakuntala rail is the only rail from here.
+
+    <p><b>1. Roads</b></p>
+    National Highway 7 from Nagpur to Hyderabad passes through the district at Vadki, Karanji, Pandharkawada,
+    Patanbori and Kelapur. State highway from Amravati to Chandrapur passes through Ner, Yavatmal, Jodmoha, Mohada,
+    Umari, Karanji and Wani. Nagpur to Tulzapur state highway route passes through Kalamb, Yavatmal, Arni, Umarkhed etc.
+    <p><b>2. Railways</b></p>
+    Yavatmal is the southern terminus of the 762 mm narrow gauge railway known locally as the Shakuntala Railway.
+    This line is composed of two legs intersecting with the broad gauge Howrah-Nagpur-Mumbai line at Murtijapur —
+    the 76 km northern leg to Achalpur and the 113 km southeastern leg to Yavatmal. As of 2004, this line was still owned by a
+    London-based company which had leased the line to India\'s Central Railway since 1903.[2] Darwha Station lies on this line.
+    Wani is a railway junction. From Wani, railway line goes up to Rajur, Chanakha and Majari-Varoda. These lines are used for
+    transportation of coal.
+In an important development, the state cabinet has approved Wardha-Nanded rail link project. This railway line will connect
+Wardha-Yavatmal in western Vidarbha with Nanded in Marathwada.\n
+
+<p><b>3. Airport</b></p>
+Yavatmal airport is located 9 Kilometres east of the city of Yavatmal and has been taken up by Reliance Airport Developers
+ Ltd for development.
+</p>
+]]></string>
+
+    <string name="ytl_education">
+    <![CDATA[
+    <p><b>Education</b></p>
+    Prominent educational institutes:
+    <p><b>Medical</b></p>
+Shri Vasantrao Naik Government Medical College, run by the government, DM Majethia Ayurvedic College.
+<p><b>Technical</b></p>
+Government Polytechnic, Government Residential Women\'s Polytechnic, Jawaharlal Darda Engineering and Technical Institute (private), Dr Bhausaheb Nandurkar College of Engineering & Technology , Jagdamba College of Engineering, ITI Institute, Late Rupeshkumar Ingole Chitrakala Mahavidyalaya.
+
+Other formal educational institutes: Amolakchand Vidhi Mahavidyalaya, Amolakchand Mahavidyalaya (Science, Arts and Commerce), Babaji Datey Kala ani Vanijya Mahavidyalaya (Arts and Commerce College), Pharmacy College, Colleges for Physical Education (BPEd), Mahatma Jyotiba Fule College of Social Work (B.S.W., M.S.W), Ayurvedic College in Yavatmal.
+<p><b>Schools</b></p>
+Jawaharlal Darda English Medium School and Jr. College, St. Aloysius English Medium School, Podar International School (C.B.S.E), Free Methodist English School, Kendriya Vidyalaya Yavatmal (central govt. CBSE school), Yavatmal Public School, Sanskar English Medium, Dr. Nandurkar Mahavidyalaya, Waghapur, Nathar English Medium High School, Vivekanand Vidyalaya, Rani Laxmibai Vidyalaya, Loknayak Bapuji Ane Vidyalaya, Ane Mahila Maha Vidyalaya,Podar International School(CBSE).
+    ]]>
+    </string>
+
+    <string name="ytl_municipal"><b>Yavatmal Municipal Council \n</b>Yavatmal Municipal Council was constituted in 1869 but was dissolved shortly thereafter.
+        It was again established in 1894 and thus forms the oldest municipal council in the district. Mr Eliot was first
+        Mayor and Lieutenant, W. Hege was Deputy Mayor. Mr Govind Punaji Bari was the first Indian Mayor on Yavatmal Municipal
+        council(02-Jan-1914 to 31-May-1932). Under his period Yavatmal got electricity. Elections were conducted for the place
+        of Mayor on 22-Dec-1934, before that he used to get appointed. The area under its jurisdiction is 70 square km.</string>
+    <string name="ytl_culture">The principal language of Yavatmal district is Marathi. However, since the district
+        has numerous Scheduled and Nomadic Tribes, various other languages are also spoken in the form of Gormati or Banjari,
+        Gondi, Hindi, Sindhi Marwari, Telugu and kolami.\nIn 1973 the Marathi Sahitya Sammelan, (Marathi Literature Conference) took place in Yavatmal city presided over
+    by Gajanan Digambar Madgulkar.\nThe district has various entrenched cultures and has India\'s most ancient tribal communities  – the Gond Raja, Gond
+    Pardhan, Kolam, Aandh and Banjara amongst others.\nVarious Hindu fairs take place in the district including:\nMaroti and Gajanan Maharaj Fair in Ghatanji\nShri Chintamani Fair at Kalamb\nShri Dutt Jayanti Fair at Mahur\nThe Jambhora and Mahashiv Ratri in Wani, Pusan and Mahagaon\nShri Rangnaath Swamy in Wani 6. Amba Devi, Kelapur\nBaba kambalposh fair, Arni\nFakiraji Maharaj Fair, Dhanaj Manikwada\nYavatmal also has the liberal culture in both its urban and rural areas and experiences fairs such as the Ghanti Baba ka Uroos in Digras and Uroos in Aarni.\nFestivals like Diwali, Dasara, Bakari-Eid, Ramzaan Eid, Gudi Padwa and almost all Hindu-Muslim occasions are celebrated. The district is also home to a Buddhist community. NAVARATRI is also the traditional festival in Yavatmal.\n
+
+</string>
+
+    <string name="ytl_census">
+    <![CDATA[
+    <p><b>Census 2011 and Other Facts</b></p>
+
+    <p>&#8226Population : 116551</p>
+    <p>&#8226Males : 58549</p>
+    <p>&#8226Female : 58002</p>
+    <p>&#8226Total No. of  houses : 26173</p>
+    <p>&#8226Literacy : 91.95%</p>
+    <p>&#8226Official Language : Marathi</p>
+    <p>&#8226PIN Code : 445001</p>
+    <p>&#8226Telephone Code : 07232</p>
+    <p>&#8226Vehicle registration : MH 29</p>
+    <br>
+    <p>Source: Wikipedia</p>
+    ]]>
+    </string>
+
+
+    <!--Tour Related Data-->
+    <!--Pench-->
+    <string name="tour_pench" translatable="false">
+    <![CDATA[
+    <p>There is no greater thrill than spotting a tiger in its natural surroundings.
+     And this can become a real life experience when you go to the Pench Tiger Reserve
+     which shares its borders with both Maharashtra and Madhya Pradesh.
+     And the tiger apart, you can also have a wonderful time exploring the other
+     flora and fauna while going on long treks through the woods.</p>
+
+     <p>The Pench Tiger Reserve comprises the Indira Priyadarshini Pench National Park, the Mowgli Pench
+     Sanctuary and a buffer zone. It nestles in the southern slopes of the Satpura ranges of Central India.
+     The river Pench, which splits the park into two, forms its lifeline. Interestingly, author Rudyard Kipling\’s
+     globally popular work of fiction, \‘The Jungle Book\’ and the creation of such lovable characters as Sher Khan,
+     Mowgli, Baloo and Bagheera derived inspiration from Pench, more specifically from R. A. Springdale\'s semi-autobiographical
+     account of his adventures in this region as described in his book \‘Seonee - Camp Life in Satpura Hills\’.</p>
+
+     <p>The area of the present tiger reserve also has a glorious history. A description of its natural wealth and richness occurs
+     in \‘Ain-i-Akbari\’. Several natural history books like Dunbar Brander\’s \‘Wild Animals of Central India\’ have detailed accounts
+     of nature\’s abundance in this reserve. These forests continue to attract a large number of nature lovers, birdwatchers,
+     photographers and holiday makers to travel the short distance of 70 kilometres from Nagpur. The bio-diverse habitat of Pench was
+     officially recognised as a national park by the Government of Maharashtra in 1975 and received an elevation in its status as
+     India\’s 25th tiger reserve in 1999.</p>
+
+     <p>Pench provides a great opportunity of coming close to carnivores like the tiger, leopard, jungle cat, wild dog, hyena, jackal
+     and the civet. During the safaris, visitors often come across pugmarks, strong smells of territory markings, and even direct
+     sightings of these majestic beasts. The park is also the home ground of a large number of herbivores, including the sambar, spotted
+     deer, Indian gaur, nilgai, four-horned antelope, barking deer, wild boar and the absolutely elusive rates, not to forget the
+     lumbering sloth bear.</p>
+
+     <p>You will also find here birds of prey including the Serpent Eagle, Hawk Eagle, Grey-Headed Fish Eagle, White-Eyed Buzzard and
+     Honey Buzzard. Barred Jungle Owlet, Collared Scops Owl and the rather weird looking Mottled Wood Owl keep watch during the nights.
+     Malabar Pied Hornbill, Scarlet Minivet, Painted Francolin, Oriole, Barbets, Kingfisher and other colourful feathered bipeds bring
+     up the bird list to over 225 species. The forest is also rich in its variety of flora and the eco-system is a mix of dry and moist
+     tropical deciduous forest with teak and bamboo being the dominant species.</p>
+
+     <p><b>Distance from Mumbai:</b> 1000 Kms</p>
+     <p><b>How to reach</b></p>
+
+     <p><b>By Air</b></p>
+     <p>The nearest airport is at Nagpur around 80 km away.</p>
+
+     <p><b>By Rail</b></p>
+     <p>The nearest railway junction is at Nagpur and it is well connected to all the cities in India.</p>
+    ]]>
+    </string>
+
+    <!--Sahasrakund-->
+    <string name="tour_sahasrakund" translatable="false">
+    <![CDATA[
+    <p><b>Sahastrakund Waterfall</b> is a waterfall near Umarkhed in Yavatmal district. This
+    town is on the boundary of Yavatmal and Nanded on Penganga river.</p>
+
+    <p>Sahastrakund situated at a distance 172 km from Yavatmal and 100 km from Nanded.
+    It is also 50 km from Nirmal and 100 km from Adilabad.</p>
+
+    <p>Along with natural scenery, waterfall is also known for temples around it. Following are the temples around Waterfall:</p>
+
+    <p><i>1.	Panchamukhi Mahadev Temple</i></p>
+    <p><i>2.	Ram temple</i></p>
+    <p><i>3.	Banganga Mahadev Temple Mahadev Temple</i></p>
+    <p>It is considered as an important tourist attraction in the rainy season.
+    The waterfall is also known for its rock pattern which looks like black metal.</p>
+    ]]>
+    </string>
+
+    <!--Tadoba-->
+    <string name="tour_tadoba" translatable="false">
+    <![CDATA[
+    <p>Tadoba is probably one of India\’s finest Tiger Reserves. The success of protection and conservation
+    mechanism has meant the number of Tigers in this reserve have increased close to the optimal holding capacity.
+    This has meant that the herbivore population has been maintained in balance and thus the flora too is able to grow and
+    regenerate continuously. In other words, the Tadoba Andhari Tiger Reserve boasts of a healthy forest. Interestingly,
+    new monitoring technologies available have also shown a steady movement and an exchange of population of animals like the
+    tiger with other neighbouring forests – some even in the neighbouring states. This has meant a genetically healthy population of
+    animals too.  So, if you are willing to bear the chilly winter mornings or scorching Vidarbha summer afternoons, in this land of
+    the Gond tribals, who once ruled these areas – you will be blessed with some of the most memorable wilderness experiences. You
+    could drive into the Park in an open Gypsy vehicle and just wait by the lakeside or at Panchadhara or Pandharpauni or just
+    anywhere on the route where you can hear the symphony of birds. Very soon, you will be enthralled by birds of different colours,
+    movements and songs. You could also witness the kings of the skies – eagles, buzzards and falcons as they descend down from the
+    heavens and perch by the waterside or may even be on a branch next to you. Be sure to carry a good pair of binocular and camera.
+    Tadoba never disappoints.</p>
+
+    <p>Don\’t make the mistake of chasing the tiger, though – because you will then miss out on the other beautiful members of the
+    Tadoba family. The ghost trees that brighten up the forests, palas and semul trees whose colours entice birds from far and near
+    and the huge giants like the ain, teak, arjun, jamun and bhera that provide the spectacular character to this forest.</p>
+
+    <p>We recommend that you drive around patiently – enjoying the sights of the heavyweight Indian gaur, the fur ball bears, the
+    innocent and beautiful sambar, barking and spotted deer or even the playful troupe of langoors. Even as you are enjoying these
+    spectacles, you might suddenly eye a crouching tiger or a hidden leopard. More often you might be led to them by the jungle postmen
+     – peacocks, langoors and spotted deer, informing the forest of their arrival.</p>
+
+     <p>Another member of the Tadoba Company may not exactly be cute and cuddly. But the crocodiles in the central lake are just as
+     interesting to observe, as the leopards and tigers are. Their stealthy movements underwater bring them extremely close to the
+     unsuspecting prey – and what follows is a logic-defying speed at which the prey disappears, grasped in the powerful jaws, as it
+     is pulled underwater.</p>
+
+     <p>While tigers, leopards and crocodiles are able to enjoy their meals without having to share with their extended family, there
+     is one predator in Tadoba, which is not so large and hidden. Wild dogs instead walk the paths, trails and even the roads without
+     trying to conceal themselves. Instead, their whole pack, with numbers often exceeding twelve to fifteen individuals march across
+     Tadoba fearlessly. Once they spot a potential prey, in some coded whistling language of their own, a plan is quickly put in place.
+     What can be witnessed next could shame most experienced war strategists too. An ageing or a weak prey is identified from the whole
+     flock. Then starts the deadly chase where individual dogs chase the prey to the next member, who then takes over the task of
+     tiring out the animal and then passing it on to the next member. Soon enough, the prey animal has lost all its energy and just
+     waits to be devoured by the whole pack in a matter of minutes. Every member of the pack manages to bite into a small portion of
+     food. But then the wild dogs are fairly small in size – and anyways food is in plenty in Tadoba and the next meal can be soon
+     ordered</p>
+
+     <p>The sight of a tiger, the snarl of a leopard, high-speed movement of the crocodile and the strategizing wild dogs will always keep
+     the memories of Tadoba fresh in the memory. But the urgent need for its protection and that of the other wilds of this country has
+     only been further strengthened today.</p>
+
+     <p><b>Important instructions for tourists: </b></p>
+
+     <p>You might have enjoyed the sights and sounds of Tadoba. But in your best interests, you must only return home with the famed
+     oranges, mangoes and orange burfis of Vidarbha. You could also try the khoya jalebi and other mouth watering delicacies at Haldiram
+      outlets. When you are here, keep time for Anandwan – that Baba Amte so lovingly built for the leprosy patients. Today a large
+      number of them have been healed and are now running the various enterprises here.</p>
+
+      <p><b>Accommodation: </b></p>
+      <p>MTDC at Moharli, private hotels and resorts and Forest Development Corporation\’s campsites.</p>
+
+      <p><b>Weather:</b></p>
+      <p>Summer temperatures can sometimes cross 400C. In winter, Tadoba is cool. Be prepared with warm clothes.
+       The best time to visit is from October to May – though parts of the park remain open even during the rains.</p>
+    ]]>
+    </string>
+
+    <!--Tipeshwar-->
+    <string name="tour_tipeshwar" translatable="false">
+    <![CDATA[
+    <p>Tipeshwar wildlife sanctuary Location- The sanctuary is situated at Pandarkawada Tehsil, in the district of Yavatmal,
+    Maharashtra.The sanctuary covers an area of around 148.63 sq.kms and abounds in vegetation cover. There are
+    various villages located around the sanctuary and thus people depend on the forest for firewood, timber etc.
+    The place is quite hilly and undulated and thus has different types of vegetation cover that vary with the altitude.
+    Fauna- The place shelters a wide array of animals that include Hyena, Chital, Blackbuck, Sambar, Jackal, Wild boar, Peacock,
+    Monkey, Blue bull, Wildcat, Bear and much more. Accommodation Rest House at Pandharkawada.</p>
+    <p><b>Accessibility</b></p>
+    <p>Rail- The closest railway station is located at Adilabad (35kms). Air- The closest airport is located at Sonegaon, Nagpur (172kms).
+    Road- The sanctuary is easily accessible via road through Pandharkawada. Best Season- April-May.</p>
+
+    <p>The Tipeshwar Wildlife Sanctuary is a \“Green Oasis\” in the southern most part of the Maharashtra State and has a great
+    significance from the point of view of wildlife and bio-diversity conservation. This sanctuary is locked in the arms of nature
+    and is adorned with picturesque landscape, luxuriant vegetation and serves as living outdoor museum to explore and appreciate
+    the nature. This sanctuary embodies one of the best of our remaining forests, in the remote part of Yavatmal district.</p>
+
+    <p>The Tipeshwar wildlife sanctuary derives its name from the \‘Goddess Tip\’ located near the Tipeshwar village in the sanctuary area.
+    It is situated in Patanbori and Parwa Ranges of the Pandarkawad Forest Division of Yeotmal District.</p>
+
+    <p><b>Floral Diversity:</b>  The sanctuary comprises of areas having rich and diverse plant communities. The major forest type
+    existing in this Protected Areas is the \‘Southern Tropical Dry Deciduous Forests\’ and termed as 5A as per revised classification
+    of Champion and Seth. The main portion of forests constitutes the climax of, the following, subtypes. In the Dry Teak Bearing
+    Forests, teak forms up to 60 percent of the crop composition and the density range from 0.6 to 0.8. The main associates of teak
+    that are found in these forests are Dhaoda, Ain, Achar, Mohuwa, Lendia, Bhirra, Tendu, Semal, Rohan, Tiwas, etc. Teak plantations
+    are also found interspersed with the natural forest tracts.</p>
+
+    <p><b>Best Time to Visit:</b> With the winter season being the best time to visit the town.</p>
+    <p><b>By Air :</b> – The nearest airport is Nagpur,170 Km away</p>
+    <p><b>By Rail:</b> -  Nearest Railhead is Amravati and Badnera, 165 Km away</p>
+    <p><b>By Road:</b> - Mumbai - Aurangabad - Jalna - Hingoli – Yavatmal – Tipeshwar -850 Km </b></p>
+    <p>Buldhana – Akola – Yavatmal- Tipeshwar ,– 350 Km</p>
+    ]]>
+    </string>
+
+    <!--Bor wildlife Sanctuary-->
+    <string name="tour_bor" translatable="false">
+    <![CDATA[
+    <p>Bor Tiger Reserve is a wildlife sanctuary which was declared as a tiger reserve in July 2014. It is located near Hingani
+    in Wardha District in the Indian state of Maharashtra. It is a home to a variety of wild animals. The reserve covers an area
+    of 138.12 sq. km (53.33 sq mi) which includes the drainage basin of the Bor Dam. It is notable that Bor Tiger Reserve and some
+    adjacent protected areas will be merged with Pench Tiger Reserve (Maharashtra) as a \'Satellite core area\', to more than double
+    the area of that well-established tiger reserve.</p>
+
+    <p><b>Tigers</b></p>
+    <p>As per the 2010-11 tiger estimation report, there are 24 tigers in the Pench and Bor landscape. The Wildlife Institute of India (WII)
+    estimated the presence of 12 tigers in and around the sanctuary but the number has increased to 15, with three new cubs sighted
+    in March 2011. A tigress with two-month-old cubs; one male and two females, was first sighted by the field staff in the sanctuary\'s
+    core zone.The annual births of new tiger cubs show that the Bor is a breeding ground for tigers, with cubs born here each of the past four years.
+    In 2008, a tigress had three cubs, then one more tigress had two cubs in 2009, followed by another tigress with one cub in 2010 and
+    three cubs in 2011.</p>
+
+    <p><b>Birds</b></p>
+    <p>There are then 160 species of birds belonging to 46 families of 16 different orders, recorded in the sanctuary. This includes
+    over 10 species of migratory birds and over 9 species of endangered birds.</p>
+
+    <p><b>Reptiles</b></p>
+    <p>The reserve is home to over 26 species of reptiles belonging 11 families, of which 6 species are endangered, namely, Indian
+     cobra, Russel\’s viper, Indian rock python, Indian rat snake, Chequered keelback and monitor lizard.</p>
+
+     <p>The best time to visit is in April and May. The sanctuary is closed on Mondays.</p>
+    ]]>
+    </string>
+
+    <!--Chikhaldara-->
+    <string name="tour_chikhaldara" translatable="false">
+    <![CDATA[
+        <p>A hill station with tigers in the vicinity! How does that sound? Dangerous or interesting? Well, there is actually
+        nothing to fear but only to enjoy when you plan a visit to the quiet hill station of Chikhaldara where you will be
+        transported to a serene zone of just flora and fauna. In fact, if you are really looking for a place to unwind, Chikhaldara
+        is where you should be.</p>
+
+        <p>Chikhaldara is located about 100 kilometres north of Amravati and is the only hill station of its kind in the Vidarbha region.
+        It is situated on a mountain range beyond which Maharashtra ends and Madhya Pradesh begins. At a height of 1,088 meters above
+        sea level, Chikhaldara has flourished in terms of flora and fauna because of the good rainfall it receives as compared to other
+        parts of Vidarbha. But what really adds value to Chikhaldara is that it is surrounded on three sides by the borders of the
+        Melghat Project Tiger Area which is spread over an area of about 1,676 square kilometres.</p>
+
+        <p>The Project Tiger area is divided into several smaller wildlife reserves and the Melghat Wildlife Reserve, which is about 780 square
+        kilometres, makes for the entire southern border and partly the western border of Chikhaldara. The Gugamal National Park, which
+        is about 320 square kilometres, is the core zone of the Project Tiger reserve and forms the eastern border of Chikhaldara and
+        partly its northeastern border.</p>
+
+        <p>In fact, given the spread of the region, Chilkhaldara and Melghat Project Tiger (MPT) are like closely bonded kin. The MPT area
+        is home to about 700 species of plants belonging to 400 genres and 97 different families. Of these 700 species, 90 are tree species
+        and they make for the true treasure of this reserve. It is this amazing floral diversity that has also groomed a wide range of
+        fauna. According to the last count, the tiger reserve has over 70 tigers along with almost the same number of leopards. It also
+        has about 200 sloth bears, 1,800 Indian gaurs and hundreds of herbivore animals like Cheetal, Sambar, Barking Deer, Wild Boar,
+        Choushinga, etc. The reserve also has rare animals like the Flying Squirrel, Pangolin, Mouse Deer, Ratel and Honey Badger.</p>
+
+        <p>If you want to hire any vehicle or want to take a bus to reach Chikhaldara, you have to go to Amravati first. The distance to Nagpur
+        is approximately 230 kilometres which are the nearest airport. For a Pune or Mumbai resident, the travelling distance is about 750
+        kilometres. There are many luxury buses that ply on the Mumbai – Aurangabad – Nagpur highway. The best season to visit Chikhaldara
+        is from October to June.</p>
+
+        <p><b>How to reach:</b></p>
+
+        <p><b>By Air:</b></p>
+        <p>The nearest airport is Nagpur which is 230 km away.</p>
+
+        <p><b>By Rail:</b></p>
+        <p>Nearest railway station is Amravati, 100 km away. It is the main town as well.</p>
+
+        <p><b>By Road:</b></p>
+        <p>For a Pune or Mumbai resident, the travelling distance is about 750 km. There are many luxury buses that ply on
+        Mumbai - Aurangabad - Nagpur highway.</p>
+    ]]>
+    </string>
+
+    <!--Mahur-->
+    <string name="tour_mahur" translatable="false">
+    <![CDATA[
+    <p>There is something to be said about a place where divinity reigns supreme. That is the case with Mahur or Mahurgad,
+    one of the most religious places in Maharashtra. Mahur is said to be the birthplace of Hindu goddess Renuka, mother of Lord
+    Parshuram. With three important temples on three hills, the temple of Renuka Devi is considered the most important and it is
+    during the annual fair held on Vijayadashmi day that you must visit to truly soak in the spiritual ambience.</p>
+
+    <p>Located in the Kinvat taluka of Nanded district, Mahur is where three deities i.e. Renuka Devi, Dattatreya and his mother
+    Anasuya are worshipped. There are three temples located on three different hills and it is Renuka Devi who is worshipped more
+    since the temple dedicated to her is one of the three-and-a-half  \‘shakti peethas\’. This particular temple is said to be built
+    by the Yadava rulers. It is believed that Renuka, wife of sage Jamadagni, was decapitated by her own son Parshurama and her head
+    fell at this place. She was later re-born by the boon of Jamadagni. Mahur finds mention as one of the famous pilgrimages in
+    \‘Devi Bhagavata\’ where it is called Matripur or Matapur. Renuka Devi is also known by the name Jagadamba Devi. It is the
+    Navaratri festival which is celebrated with true grandeur at Mahur. A big fair is held on the occasion of Vijayadashami and
+    \‘mahapooja\’ and the \‘mahaprasad\’ are specially arranged on auspicious occasions like Navaratri and Datta Poornima. The
+    fascinating location of the three temples of Mahur appeals to devotees and tourists alike because it is surrounded by jungles,
+    which also have an abundance of fauna in the form of peacocks, deer, panthers and black bears.</p>
+
+    <p>Mahur is also said to be the birthplace of Lord Dattatreya who was born to a goddess, Anasuyaa. As such, Datta Pournima
+    has considered a very auspicious day and thousands of devotees visit the temple on this occasion. Mahur is approachable from
+    different cities like Nanded, Kinvat, Pusad, etc. and the nearest railheads are at Kinvat and Nanded. State transport buses
+    ply regularly from Nanded and Kinvat to Mahur and taxis and buses are also available from Hadgaon. There also are daily flights
+    from Mumbai to Nanded. Accommodation facilities are ample in Mahur city which is 7 kilometres from the temple. These include
+    lodges, hotels, government rest houses, etc. Local restaurants and \‘dhabas\’ serve fresh and good food.</p>
+
+    <p><b>How to reach</b></p>
+
+    <p><b>Air</b></p>
+    <p>One can reach Nagpur and Nanded by air to go to Mahur from Mumbai.
+    Nagpur is more convenient as it is well connected to most parts of India by air.</p>
+
+    <p><b>Rail</b></p>
+    <p>State transport buses from Nanded, Kinwat or Pusad go up to Mahur regularly. If you want to travel from Mumbai to Mahur by
+    train then take Nandigram Express from Mumbai to Kinwat and then the state transport bus from Kinwat to Mahur. You can also
+    travel by Devgiri Express and Tapovan Express till Nanded, then take state transport bus from Nanded to Mahur.</p>
+
+    <p><b>Road</b></p>
+    <p>From Yavatmal, you can take a bus or taxi to Mahur. The road from Nagpur to Mahur via Wardha, Yavatmal and
+    Mahagaon is very scenic.</p>
+    ]]>
+    </string>
+
+    <!--Melghat-->
+    <string name="tour_melghat" translatable="false">
+    <![CDATA[
+    <p>Melghat was among the first 9 Tiger Reserves to be notified in 1973-74 under the prestigious Project Tiger movement. It is
+    located in the Northern part of Amravati district, this is where Maharashtra meets Madhya Pradesh in the South Western Satpura
+    mountain ranges. This Tiger Reserve has spread over 3600 sq km encompassing the Gugamal National Park, Melghat Wildlife Sanctuary
+    and neighbouring rich deciduous Reserve Forests.</p>
+
+    <p>Most of the tourists combine their Melghat visit with a stay at the beautiful hill station of Chikhaldara, where they are able
+    to trek to the imposing Gavilgad fort and reach some spectacular waterfalls.</p>
+
+    <p>What makes Melghat so special is the very interesting undulating landscape. Though this makes a sighting of glamorous animals
+    a little difficult as compared to many of the flatter forests, tourists are blessed with a great jungle experience. As the Sipna
+    river beautifully weaves its way through the dry deciduous forest, it presents great photo opportunities. Added to this - are the
+    tribal communities of Korkus and Gaolis who reside here and live very interesting lifestyles. It is always an experience to cherish
+    to walk along the Sipna river with a Korku adivasi, as he catches fish with very interesting contraptions.</p>
+
+    <p>Birding has always been very special to Melghat. There is an \‘ullu\’ - not just another owl, but an owlet that had been thought
+    to be extinct for almost 113 years – The Forest Owlet!!! It was Pamela Ramussen an American ornithologist, who finally located one
+    bird in the Satpura foothills in 1997. Till 1997, the only records of the bird were seven stuffed specimen in the British museum
+    that was collected almost a century ago. Forests of Melghat also since then reported a few of these Owlets.</p>
+
+    <p>The forests also boast of a great diversity of other forest birds. You can hear the distinct and loud \"line clear\" calls of
+    an Indian pitta, also called as the Navrang – for its \‘technicoloured\’ form. During the forest safari drive, you can often sight
+    the handsome crested serpent eagles and crested hawk eagles keeping a watch on their kingdoms. The racket-tailed drongo adds a
+    symphony – imitating over 15 types of other birds.</p>
+
+    <p>Amongst mammals, a number of tourists are able to spot the tigers and leopards. But it is the sightings of sloth bear on road
+    from Chikhaldara to Semadoh that leaves an indelible impression on many a mind. It is a treat to watch it as it moves in search
+    of fallen fruits and insects on the forest floor.</p>
+
+    <p>The Semadoh tourist complex also boasts of a unique mammal – the flying squirrel. Very often after dusk, you can sight this
+    arboreal mammal glide from one tree to another. It is a spectacle that you must witness to once in your lifetime indeed.</p>
+
+    <p> Melghat and its neighbouring hill station of Chikaldara have a long history.
+    Today, the need of the hour is to retain such areas of wilderness before they are captured for development.</p>
+
+    <p><b>Weather</b></p>
+    <p>Summer temperatures can sometimes cross 40C. In winter, Melghat is cool with mercury falling below 15C</p>
+    <p>Heavy rainfalls in the range of over 1000 – 2500 mm often flood the Sipna river.The best time to visit is during December to May.</p>
+
+    <p><b>Stay</b></p>
+    <p>Rest-houses and Sankul at Semadoh. Rest house at Kolkaz has always been very popular with wild lifers.</p>
+
+    <p><b>Getting there</b></p>
+    <p>Semadoh Interpretation Centre & Harisal. The nearest airport is Nagpur (260 km). The nearest bus stand is Paratwada.
+    Close by railway stations are Badnera and Amravati (100 km)</p>
+
+    ]]>
+    </string>
+
+    <!--Painganga-->
+    <string name="tour_painganga" translatable="false">
+    <![CDATA[
+    <p>Painganga Wildlife Sanctuary is located in Umarkhed Tehsil of Yavatmal district of the Indian state Maharashtra. It derives
+    its name from the river Painganga or Penganaga River which borders the sanctuary on its three sides. It encompasses a sprawling
+    area of about 325 square kilometres and hosts a vast variety of flora and fauna. The sanctuary has been divided in the central
+    region by a wide valley which forms the border of Nanded and Yavatmal districts. </p>
+
+    <p>The flora of Painganga Wildlife Sanctuary features an exquisite combination of southern mixed deciduous forests and dry teak
+    forests. The numerous species of fauna sheltered here include Fox, Leopard, Jackal, Hare, Four Horned Antelope, Porcupine, Sambar,
+    Nilgai, Black Buck, Chinkara and many others. It is also a paradise for bird watchers to cherish a pleasing view of gorgeous
+    avifauna like Vulture, Bulbul, Dove, Kingfisher, Cuckoo, Kite and others. The best time to visit Painganga Wildlife Sanctuary is
+    from the month of January to June. Jungle safari is an enjoyable experience in Painganga Wildlife Sanctuary. </p>
+
+    <p>The Painganga Wildlife Sanctuary is named after the river Painganga that surrounds it on three of its four sides. It is
+    situated in the Umarkhed Tehsil of the city of Yavatmal. The sanctuary is sprawled over an area of approximately 325 sq. km and
+    has a huge variety of flora and fauna.Amongst flora, it has a fabulous mix of dry teak forests and southern mixed deciduous
+    forests, while under the fauna bracket, the sanctuary is home to a host of animal species like – the Chinkara, the Black Buck,
+    the Nilgai Sambar, the Four Horned Antelope, Hare, Jackal, Leopard, Fox and many more.</p>
+
+    <p>Bird lovers would love the different types of birds found here like the Kite, the Cuckoo, the Kingfisher, the Dove, the Bulbul,
+    the Vulture, etc. The duration from the month of January to the month of June is the best period to enjoy this sanctuary.</p>
+
+    <p><b>Best Time to Visit: </b></p>
+    <p>With the winter season being the best time to visit the town.</p>
+
+    <p><b>Getting There:</b></p>
+
+    <p><b>By Air – </b></p>
+    <p>The nearest airport is Nagpur, 250 Km away</p>
+
+    <p><b>By Rail – </b></p>
+    <p>Nearest Railhead is Badnera, 200 Km away</p>
+
+    <p><b>By Road – </b></p>
+    <p>Mumbai - Aurangabad - Jalna - Hingoli – Yavatmal – Painganga - 900 Km</p>
+    ]]>
+    </string>
+
+    <!--Terms and Conditions-->
+    <string name="text_tc" translatable="false">All information provided in this app is best to our knowledge though we don\'t take any responsibility for the information. This information is not official and users are requested to use this information with their own consciousness and risk. We are not legally bound to any content published in this application. Our intention is to provide useful and handy information to the citizens using latest available technology. This application and any information available in it, including text, graphics, icons, images and trademarks must not be copied, reproduce, upload, download, transmit, store in retrieval system, modify, alter or display in public or distribute in any way the contents or any part of this application for any purpose without our prior written permission. All information and services are subject to intellectual property rights protection. You must comply with the following requirements:
+\n1) Must not record, reproduce or create derivative works of the application.
+\n2) Must not publish or post or display in public any information or content provided by this application nor distribute or make this application available for use on the internet or any other internet space.
+\n3) Must not use this application for any immoral, illegal or any other purpose which may be determined threatening, abusive or harmful. (Strict actions will be taken if used.)
+\nThe moment you install this application on your mobile, you agree to all the terms and conditions stated above.
+</string>
+
+    <string name="about_developers" translatable="false">
+        This app is developed by,
+        \n\nProtechLabz
+        \n\nContact Details :
+        \nprotechlabz@gmail.com
+        \n+919545155722
+    </string>
+    <string name="title_activity_floatingbutton" translatable="false">floatingbutton</string>
+
+</resources>

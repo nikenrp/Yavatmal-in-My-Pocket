@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_detail_weather"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg11"
+    tools:context="in.protechlabz.www.yavatmalindicatorserver.ui.DetailWeatherActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/adView10"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_detailweather"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1.5"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/detail_weather_desc"
+                android:textColor="@color/card_white"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear Sky"
+                android:textSize="18sp"
+                android:textColor="@color/card_white"
+                android:id="@+id/text_description"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/detail_weather_temp"
+                android:textColor="@color/card_white"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12 C"
+                android:textColor="@color/card_white"
+                android:textSize="18sp"
+                android:id="@+id/text_current_temperature"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/detail_weather_humidity"
+                android:textColor="@color/card_white"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="65.0"
+                android:textColor="@color/card_white"
+                android:textSize="18sp"
+                android:id="@+id/text_humidity"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/detail_weather_wind_speed"
+                android:textColor="@color/card_white"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="8dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2.9"
+                android:textSize="18sp"
+                android:textColor="@color/card_white"
+                android:id="@+id/text_wind_speed"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

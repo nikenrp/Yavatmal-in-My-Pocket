@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/bg11">
+
+    <ImageView
+        android:id="@+id/multiple_ad_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/protech_banner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/ll_news"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/text_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/text_news"
+            android:textColor="@color/card_white"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_news"
+        android:layout_below="@id/multiple_ad_imageview"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/main_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/weatherLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mainPageButtonClickHandler"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/currentTemp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/text_current_temperature"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/weatherImg"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/art_clear"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#c0c0c0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/dirLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="mainPageButtonClickHandler"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/main_page_image_button_size"
+                        android:layout_height="@dimen/main_page_image_button_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_dir"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_directory"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emerLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="mainPageButtonClickHandler"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/main_page_image_button_size"
+                        android:layout_height="@dimen/main_page_image_button_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_emer"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_emergency"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/busLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="mainPageButtonClickHandler"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/main_page_image_button_size"
+                        android:layout_height="@dimen/main_page_image_button_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_bus"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_bus_timings"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nearbyLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="mainPageButtonClickHandler"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/main_page_image_button_size"
+                        android:layout_height="@dimen/main_page_image_button_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_plac"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_nearby"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ytlLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="mainPageButtonClickHandler"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/main_page_image_button_size"
+                        android:layout_height="@dimen/main_page_image_button_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_ytl"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_about_ytl"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tourLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="mainPageButtonClickHandler"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/main_page_image_button_size"
+                        android:layout_height="@dimen/main_page_image_button_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_tour"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_tour_spots"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll_news"
+        android:background="#c0c0c0"
+        android:id="@+id/simpleLine"/>
+
+</RelativeLayout>
